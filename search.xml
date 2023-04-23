@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>源码网站</title>
+      <link href="/2023/04/23/%E6%BA%90%E7%A0%81%E7%BD%91%E7%AB%99/"/>
+      <url>/2023/04/23/%E6%BA%90%E7%A0%81%E7%BD%91%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<p>PHPOA:47.115.213.153<br>pikachu:01.mimosa.love</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux 基础命令</title>
+      <link href="/2023/04/21/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/04/21/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<p>Linux 学习笔记<br>ip address 查看网卡（ip a）<br>cd&#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F; 进入配置文件的文件下<br>查看目录 ls查看详细信息 -ll   ls- all（所有） ctrl+l清屏<br>centos中ll直接可以查看详细信息<br>文件编辑器 vi vim<br>可以进去但是不能使用 或者去下载<br>不需要i编辑 直接改 nano（linux都会自带）<br>vi ifcfg-ens33<br>IP可以查看 ONBOOT&#x3D;yes<br>按i为编辑，按esc退出编辑<br>保存编辑退出 :wq<br>不保存编辑退出 :q<br>保存编辑强制退出 :wq!<br>网卡重启 service network restart<br>网卡重启（大部分平台支持的服务）systemctl restart network<br>设置静态IP BOOTPROTO&#x3D;static<br>IPADDR&#x3D; 166.166.166.75 IP<br>NETMASK&#x3D;255.255.255.0 子网掩码<br>GATEWAY&#x3D;166.166.166.1 网关<br>DNS1&#x3D;114.114.114.114<br>切换命令行 init 3 切换为图形化界面 init 5<br>查看当前目录路径命令 pwd<br>linux为 &#x2F; windows为 <br>返回上一级 cd ..<br>返回根目录 cd ~<br>创建文件目录命令 mkdir<br>删除文件目录命令 rmkdir<br>删除文件 rm-rf 目录或文件 rm-ri<br>删库跑路 rm-rf &#x2F;*<br>复制文件 cp aaa &#x2F;mnt&#x2F;<br>移动文件 mv aaa &#x2F;mnt&#x2F;<br>查看命令 cat<br>下载 yum install -y unzip zip -y为一直同意yes<br>有些Linux apt-get install -y unzip zip</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>简单实现hydra爆破</title>
+      <link href="/2023/04/20/%E6%96%B0%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+      <url>/2023/04/20/%E6%96%B0%E7%9A%84%E4%B8%80%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[<p>1.Win7中高级系统属性-属性-允许此计算机被远程协助（打开）3389为Windows远程连接 3389端口<br>2.Win+R打开CMD，输入firewall.cpl，关闭Windows防火墙<br>3.输入ipconfig，查看win7 ip为192.168.182.131<br>4.打开Kali控制台输入ifconfig查看kali端口为192.168.182.129<br>5.Win7 cmd中开Ping ip为192.168.182.129  Kali中ping 192.168.182.130<br>6.kali中nmap -sT -p3389 192.168.182.1&#x2F;24 扫描3389端口,可知存在C段三个ip存在3389，其中一个为kali的，所以被攻击的IP为192.168.182.131<br>7.执行命令(分别通过指定用户名和密码或用户名本密码本进行爆破)<br>(小写l和p为指定 大写为用户名本密码本)<br><img src="/pic/001.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/04/10/hello-world/"/>
+      <url>/2023/04/10/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
